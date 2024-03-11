@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: #f0f2f5;
+    
+}
+.inp
+{
+   background-color: #f0f2f5;
+   width: 250px;
+   height: 40px;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   padding: 0 15px;
+   margin-left: 10px;
+}
+.navbar .navbar-left .logo i
+{
+    color: blue;
+    font-size: 2.5rem;
+}
+.inp input{
+    width: 100%;
+    background: transparent;
+    padding: 0px;
+    outline: none;
+    border: 0;
+    margin: 0;
+}
+.navbar-left
+{
+   display: flex; 
+}
+/* .navbar-left a img
+{
+    margin-left: 90px;
+} */
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background: #fff;
+    padding: 10px;
+    position: sticky;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgb(0,0,0,0,1);
+}
+.navbar-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.navbar-center .home,
+.navbar-center .network,
+.navbar-center .jobs,
+.navbar-center .Messaging,
+.navbar-center .Notifications
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+
+}
+.navbar-center .home i,
+.navbar-center .network i,
+.navbar-center .Jobs i,
+.navbar-center .Messaging i,
+.navbar-center .Notifications i
+{
+    font-size: 1.2rem;
+}
+.navbar-center .network i,
+.navbar-center .Jobs i,
+.navbar-center .Messaging i,
+.navbar-center .Notifications i
+{
+    color: gray;
+}
+.navbar-center .network i:hover,
+.navbar-center .Jobs i:hover,
+.navbar-center .Messaging i:hover,
+.navbar-center .Notifications i:hover
+{
+    color: black;
+}
+
+/* ---------Sidebar------------ */
+.container
+{
+    display: grid;
+    grid-template-columns: 20% 45% 25%;
+    gap: 2rem;
+    width: 85%;
+    margin: 1.8rem auto;
+}
+aside .sidebar
+{
+    background-color:#fff;
+    height: 55vh;
+    width: 40vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.sidebar .top
+{
+    width: 100%;
+    height: 13vh;
+    background-color: lightblue;
+}
+.sidebar img{
+    position:relative;
+    top:50%;
+    border-radius:50px;
+    left: 35%;
+    width: 5rem;
+    height: 5rem;
+}
+aside .sidebar .profile
+{
+    position: relative;
+    text-align: center;
+    top: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-bottom: 2px solid grey;
+    height: 50px;
+    
+}
+aside .profile a{
+    text-decoration: none;
+    color: black;
+    top:10px;
+    font-weight: bold;
+}
+aside .profile small
+{
+    color: gray;
+}
+aside .sidebar .view
+{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   padding: 0.1rem;
+   top: 15%;
+   border-bottom: 2px solid grey;
+}
+aside .sidebar .views
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    
+}
+.sidebar .view .views a 
+{
+    color: blue;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+aside .sidebar .views:hover{
+    background-color: gray;
+}
+.sidebar .premium
+{
+    position: relative;
+    top:12%;
+    margin: 10px 0;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+.sidebar .premium a
+{
+   display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: black;
+
+}
+.sidebar .premium a i{
+    color: yellow;
+    text-decoration: none;
+    margin-left: 5px;
+}
+hr#premium,
+hr#view,
+hr#profile,
+hr#item
+{
+    margin: 0.5rem 0;
+}
+.item
+{
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    top:10%;
+    padding: 0.8rem;
+    cursor: pointer;
+    margin:12px 0;
+    /* border-bottom: 2px solid gray; */
+}
+aside .sidebar .item:hover
+{
+    background-color: gray;
+    padding-top: 5px;
+}
+aside .recent
+{
+    background-color: #fff;
+    margin-top: 0.2rem;
+    height: 55vh;
+    width: 40vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+aside .recent .recents
+{
+    margin: 7%;
+    color: gray;
+}
+aside .recent .tensor
+{
+    margin-left:  5%;
+    color: gray;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 0.5rem;
+}
+aside .recent .group{
+    margin:12px;
+    
+}
+aside .recent .group a
+{
+    text-decoration: none;
+}
+aside .recent .t1,
+aside .recent .t2
+{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 10px;
+    color:gray;
+}
+aside .recent .hashtag
+{
+    margin: 18px 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: gray;
+}
+aside .recent .hashtag a{
+    text-decoration: none;
+}
+
+/* ------------End sidebar------------- */
+
+/* main .main_section
+{
+    background-color: #fff;
+    height: 200vh;
+    width: 100vh;
+} */
+main
+{
+    position: relative;
+}
+main .main_section .upper_main
+{
+    background-color: #fff;
+    height:120px;
+    width: 100vh;
+    border-radius: 10px;
+}
+main .main_section .upper_main .searchbox
+{
+    padding: 10px;
+   display: flex;
+   gap: 1rem;
+}
+main .main_section .upper_main .searchbox .logo
+{
+    border-radius: 50px;
+  height: 2.9rem;
+  width: 2.9rem;
+}
+main .main_section .upper_main .searchbox .search_text
+{
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+main .main_section .upper_main .searchbox .search_text:hover{
+    background-color:lightgray;
+    cursor: pointer;
+}
+main .main_section .upper_main .posts
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+main .main_section .upper_main .posts .post{
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.6rem 0.5rem;
+    opacity: 0.6;
+}
+main .main_section .upper_main .posts .post:hover{
+    background-color: lightgray;
+}
+main .main_section .upper_main .posts .post:nth-child(1) i{
+    color: blue;
+}
+main .main_section .upper_main .posts .post:nth-child(2) i{
+    color: green;
+}
+main .main_section .upper_main .posts .post:nth-child(3) i{
+    color: yellow;
+}
+main .main_section .upper_main .posts .post:nth-child(4) i{
+    color: purple;
+}
+main .main_section .middle_main
+{
+    background-color: #fff;
+    width: 100vh;
+    height: 15vh;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+ 
+main #dot
+{
+    position: absolute;
+    right: 12rem;
+    top: 10rem;
+}
+main .main_section .middle_main .fashion .myntra
+{
+    height: 40px;
+    width: 40px;
+}
+main .main_section .middle_main .fashion,
+main .main_section .middle_main .follower
+{
+   margin: 15px 10px;
+   padding: 7px;
+}
+main .main_section .middle_main
+{
+    display: flex;
+}
+main .main_section .middle_main .follower
+{
+   font-size: larger;
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+}
+main .main_section .middle_main .follower h6
+{
+    color: gray;
+}
+main .main_section .middle_main1
+{
+    background-color: #fff;
+    height:70vh;
+    width: 100vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main .main_section .middle_main1 .official .picture
+{
+    margin-top: 10px;
+   position: relative;
+   height: 360px;
+   width: 100%;
+   margin-right: 100%;
+   
+}
+main .main_section .middle_main1 .comment
+{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    margin-left: 0;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+main .main_section .middle_main1 .comment :nth-child(1)
+{
+    color: blue;
+}
+main .main_section .middle_main1 .comment :nth-child(2)
+{
+    color: red;
+}
+main .main_section .middle_main1 .comment :nth-child(3)
+{
+    color: green;
+}
+main .main_section .middle_main1 .comment :nth-child(4)
+{
+    color:darkblue;
+}
+main .main_section .middle_main1 .comments
+{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+main .main_section .middle_main1 .comments a
+{
+    text-decoration: none;
+}
+main .main_section .middle_main1 .comments :nth-child(1)
+{
+    color: blue;
+}
+main .main_section .middle_main1 .comments :nth-child(3)
+{
+    color: red;
+}
+main .main_section .middle_main1 .comments :nth-child(5)
+{
+    color: green;
+}
+main .main_section .middle_main1 .comments :nth-child(7)
+{
+    color:darkblue;
+}
+main .main_section .lower_main
+{
+    background-color: #fff;
+    height:100px;
+    margin-top: 10px;
+    width: 100vh;
+}
+main .main_section .lower_main .yash_logo
+{
+    height: 50px;
+    margin: 30px;
+    width: 60px;
+}
+main .main_section .lower_main .yash_follower
+{
+   font-size: larger;
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+   margin-top: 30px;
+    margin-left: 1px;
+}
+main .main_section .lower_main .yash_follower h6
+{
+    color: gray;
+}
+main .main_section .lower_main
+{
+    display: flex;
+}
+main #dots
+{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 20px;
+}
+main .main_section .lower_main1
+{
+    background-color: #fff;
+    height:70vh;
+    width: 100vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main .main_section .lower_main1 .picture{
+    margin-top: 0px;
+   position: relative;
+   height: 370px;
+   width: 100%;
+   margin-right: 100%;
+
+}
+main .main_section .lower_main1 .comment1
+{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    margin-left: 0;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+
+}
+main .main_section .lower_main1 .comment1 :nth-child(1)
+{
+    color: blue;
+}
+main .main_section .lower_main1 .comment1 :nth-child(2)
+{
+    color: red;
+}
+main .main_section .lower_main1 .comment1 :nth-child(3)
+{
+    color: green;
+}
+main .main_section .lower_main1 .comment1 :nth-child(4)
+{
+    color:darkblue;
+}
+main .main_section .lower_main1 .comments1
+{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+main .main_section .lower_main1 .comments1 a
+{
+    text-decoration: none;
+}
+main .main_section .lower_main1 .comments1 :nth-child(1)
+{
+    color: blue;
+}
+main .main_section .lower_main1 .comments1 :nth-child(3)
+{
+    color: red;
+}
+main .main_section .lower_main1 .comments1 :nth-child(5)
+{
+    color: green;
+}
+main .main_section .lower_main1 .comments1 :nth-child(7)
+{
+    color:darkblue;
+}
+
+/* -----------------main end---------------- */
+
+.right_panal .right_first
+{
+    background-color:#fff;
+    height: 55vh;
+    width: 50vh;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-left: 100px;
+}
+.right_panal .news
+{
+    font-size: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.right_panal .daily_news ul
+{   margin-top: 40px;
+     margin-left: 20px;
+     font-weight: bold;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+    
+}
+.right_panal .daily_news h5{
+    color: gray;
+}
+.right_panal .right_middle
+{
+    background-color:#fff;
+    height: 90vh;
+    width: 50vh;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 20px; 
+    
+}
+.right_panal .right_middle .most_view
+{
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+}
+.right_panal .daily_news1 ul
+{  
+     margin-top: 40px;
+     margin-left: 30px;
+     font-weight: bold;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+    
+}
+.right_panal .daily_news1 h5{
+    color: gray;
+}
+
+.right_panal .right_middle .feed
+{
+   display: flex;
+   margin: 20px;
+   justify-content: space-between;
+   font-size: larger;
+}
+.right_panal .right_middle .feedback
+{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0;
+}
+.right_panal .right_middle .feedback .insta_info
+{
+   padding-top: 10px;
+}
+.right_panal .right_middle .feedback i{
+    color: rgb(204, 24, 84);
+    margin: 20px;
+    font-size: 50px;
+}
+.right_panal .right_middle .feedback .insta_info button:hover
+{
+ cursor: pointer;
+ 
+}
+.right_panal .right_middle .feedback .insta_info button
+{
+    width: 170px;
+    border-radius: 10px;
+    background-color: lightblue;
+    top: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 3px solid red;
+            border-collapse: separate;
+            
+        }
+        th
+        {
+            background-color: aqua;
+        }
+        td
+        {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Tag</h1>
+    <table>
+        <caption>Student Data</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Marks</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+               <tr>
+               <td>Ram</td>
+               <td>11</td> 
+               <td>80</td>
+               <td>Science</td>
+               </tr>
+               <tr>
+                <td>Sapna</td>
+                <td>12</td>
+                <td>80</td>
+                <td rowspan="2">Maths</td>
+               </tr>
+               <tr>
+                <td>Kajal</td>
+                <td>13</td>
+                <td>90</td>
+                <!-- <td>Maths</td> -->
+               </tr>
+               
+               <tfoot>
+               <tr>
+                <td colspan="2">Total</td>
+                <td>299</td>
+            </tr>
+        </tfoot>
+               
+               
+        </tbody>
+    </table>
+</body>
+</html>

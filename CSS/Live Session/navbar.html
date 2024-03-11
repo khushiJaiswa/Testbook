@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 120px;
+        width: 250px;
+        margin-top: 1px;
+        
+    }
+    div:hover
+    {
+        width: 90%;
+		transition-duration: 2s;
+	    transition-delay: 3s;
+        transform: scale(1.8);
+    }
+    .d1
+    {
+        background-color: rgb(173, 235, 235);
+        transition-timing-function: ease-in;
+    }
+    .d1:hover
+    {
+        background-color: rgb(171, 161, 229);
+        transition-timing-function: ease-in-out;
+    }
+    .d2
+    {
+        background-color: rgb(113, 227, 227);
+        transition-timing-function: ease-out;
+    }
+    .d3
+    {
+        background-color: rgb(25, 165, 165);
+        transition-timing-function: ease;
+    }
+    .d4
+    {
+        background-color: rgb(195, 230, 230);
+        transition-timing-function: linear;
+    }
+    .d5
+    {
+        background-color: rgb(151, 240, 240);
+    }
+</style>
+<body>
+<div class="d1" >Home</div>
+<div class="d2">About Us</div>
+<div class="d3">About</div>
+<div class="d4">Contact</div>
+<div class="d5">Info</div>
+</body>
+</html>

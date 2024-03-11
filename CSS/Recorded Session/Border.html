@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        h1
+        {
+            color: blue;
+        }
+        p
+        {
+          /* border-style: dotted;
+          border-style: dashed;
+          border-style: double;
+          border-style: groove; */
+          border-style:solid ;  
+ 
+          border-top-style: dashed;
+          border-bottom-style: double;
+          border-left-style: groove;
+          border-right-style: dotted;
+
+          /* border style top right bottom right */
+         border-style: solid dashed dotted double;
+
+         /* border style top-bottom and left- right , only 2 values */
+         border-style:double dashed;
+
+         /* Border width */
+         /* thick,medium,thin */
+         border-width: thin;
+         border-width: medium;
+         border-width: thick;
+
+        /* Border Color */
+        border-color: palevioletred;
+        border-top-color: darkcyan;
+        border-bottom-color: orange;
+        border-left-color: purple;
+        border-right-color: green;
+        }
+        a{
+            border: 10px groove rgb(227, 112, 112);
+            padding: 6px; 
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        a:hover
+        {
+            color:red;
+            background-color: wheat;
+        }
+        table,td,tr,th
+        {
+            border: 2px solid gray;
+            /* border-collapse:collapse ; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Css</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eos nihil vel explicabo illo odit nam fugit, cum voluptates optio sequi quia, rerum qui, at obcaecati autem enim veritatis officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis architecto amet recusandae, modi a vel magni dolores similique soluta ex, veritatis eaque dolor nisi voluptate voluptas optio? Omnis, <nostrum class="lo"></nostrum></p>
+      <br>
+        <a href="">Click Me</a>
+<br><br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ritika</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Aarna</td>
+                    <td>14</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

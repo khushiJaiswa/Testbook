@@ -1,0 +1,14 @@
+div
+        {
+            background-color: aqua;
+            border: 10px green solid;
+            border-top-left-radius: 26px;
+            border-bottom-right-radius: 26px;
+            border-top-color: blue;
+            border-bottom-color: purple;
+        }
+        p{
+            font-family: cursive;
+            font-style: oblique;
+            font-size: 20px;
+        }

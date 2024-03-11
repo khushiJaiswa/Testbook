@@ -1,0 +1,45 @@
+body
+{
+  background-image: url(https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=600);
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  /* background-position: bottom;
+  background-attachment: scroll; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2{
+    color:red;
+    background-color: aqua;
+    /*
+     hex value
+    0-9 & a-e
+    background-color: #8491dd;
+    */
+
+    /*
+     rgb value  (0-255)
+     r-red
+     g-green
+     b-blue
+      background-color: rgb(255,113,545);
+    */
+
+
+    /* 
+    opacity show transperency of background
+    - 0.0 - 1.0 
+    opacity: 0.1;
+    */
+    
+}
+p{
+    
+}
+.container
+{
+    /* background-color: bisque; */
+    width: 700px;
+    height: 500px;
+}

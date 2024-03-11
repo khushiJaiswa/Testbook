@@ -1,0 +1,43 @@
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    box-shadow: 2px 2px 6px#ccc;
+}
+nav>.left-icon-container> h1
+{
+    padding-left:30px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkmagenta;
+    font-size: 2rem;
+}
+nav>.right-icon-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav>.right-icon-container>a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+
+}
+nav>.right-icon-container>a:last-child
+{
+    margin-right: 50px;
+}
+nav>.right-icon-container>a:hover
+{
+    color: wheat;
+}
+.card-container>img{
+    height: 100%;
+    width: 100%;
+}

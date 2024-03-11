@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function score()
+         {
+        
+            let a =prompt('enter your score:');
+
+            if(a<60)
+            {
+                console.log('F Grade');
+            }
+            else if(a>=60&&a<=69)
+            {
+                console.log('D Grade');
+            }
+            else if(a>=70&&a<=79)
+            {
+                console.log('C Grade');
+            }
+            else if(a>=80&&a<=89)
+            {
+                console.log('B Grade');
+            }
+            else if(a>=90)
+            {
+                console.log('A Grade');
+            }
+            else if(a<=0 && a>100)
+            { 
+                console.log('error');
+            }
+         }
+        score();
+    </script>
+</body>
+</html>

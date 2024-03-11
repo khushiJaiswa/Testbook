@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container
+      {
+        background-color: aqua;
+        padding: 15px;
+        display: flex;
+        /* height: 700px; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row wrap-reverse; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* align-items: baseline; */
+        align-self: stretch;
+      }
+      .item
+      {
+        background-color: black;
+        color: white;
+        padding: 10px 50px;
+        margin: 10px;
+        height: 100px;
+        width: 100px;
+        
+      }
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello w are learning Flex</h1> -->
+   <div class="container">
+    <div class="item" style="flex: 0 8 0px;">item1</div>
+    <div class="item" style="align-self: self-start;">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+    <!-- <div class="item">item6</div>
+    <div class="item">item7</div>
+    <div class="item">item8</div>
+    <div class="item">item9</div>
+    <div class="item">item10</div>
+    <div class="item">item11</div>
+    <div class="item">item12</div>
+    <div class="item">item13</div> -->
+    
+   </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container
+        {
+           display: grid;
+           grid-template-areas:
+           "header header header header"
+           "sidebar sidebar menubar menubar"
+           "footer footer footer footer";
+        }
+        .header
+        {
+            background-color: aqua;
+            
+        }
+        .sidebar
+        {
+            background-color: aquamarine;
+        }
+        .menubar
+        {
+            background-color: blueviolet;
+        }
+        .footer
+        {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="header">header</div>
+<div class="sidebar">sidebar</div>
+<div class="menubar">menubar</div>
+<div class="footer">footer</div>
+    </div>
+</body>
+</html>
